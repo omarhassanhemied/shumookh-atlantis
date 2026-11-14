@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title data-i18n="meta.title">{{meta.title}}</title>
+<meta name="description" content="{{meta.description}}" data-i18n-attr="content:meta.description">
+<meta name="theme-color" content="#061722">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:title" content="{{meta.title}}" data-i18n-attr="content:meta.title">
+<meta property="og:description" content="{{meta.description}}" data-i18n-attr="content:meta.description">
+<meta property="og:image" content="assets/logo/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/logo/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<script>document.documentElement.className+=" js"</script>
+<link rel="stylesheet" href="css/style.css">
+<!-- JSON-LD يتولد تلقائياً من js/config.js (بيانات مؤكدة فقط) -->
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3.2l1.6 4.2-2.1 1.4a11 11 0 0 0 5.7 5.7l1.4-2.1L19 14.8V18a2 2 0 0 1-2 2A13 13 0 0 1 3 6a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.2A8.8 8.8 0 1 0 12 3.2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 8.2c.3-.5.8-.4 1 0l.8 1.7c.1.3 0 .5-.2.7l-.5.6c.8 1.5 1.8 2.3 3.2 3l.6-.6c.2-.2.5-.3.8-.1l1.6.9c.4.2.4.6.1 1-.5.8-1.4 1.1-2.4.8-2.9-.9-5.2-3.2-6-5.9-.2-.9.2-1.6 1-2.1Z" fill="currentColor"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3.5c3.2 4 5.6 7 5.6 10a5.6 5.6 0 0 1-11.2 0c0-3 2.4-6 5.6-10Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.4 14.3a2.8 2.8 0 0 0 2 2.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-heat" viewBox="0 0 24 24"><path d="M9 14.2V5.5a2.5 2.5 0 0 1 5 0v8.7a4.2 4.2 0 1 1-5 0Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M11.5 9v6.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M17 7.5c1.2.6 1.2 1.8 0 2.4M19.5 6c1.8 1 1.8 3.4 0 4.4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-roof" viewBox="0 0 24 24"><path d="M3.5 10.5 12 4l8.5 6.5L12 17 3.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m3.5 14 8.5 6.5 8.5-6.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-build" viewBox="0 0 24 24"><path d="M5 20.5V8.5l7-3.5 7 3.5v12M3.5 20.5h17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/><path d="M9 10.5h1.5M13.5 10.5H15M9 14h1.5M13.5 14H15M10.5 20.5v-3h3v3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5.5h16v10H9.5L5.5 19v-3.5H4v-10Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-form" viewBox="0 0 24 24"><path d="M6 3.5h9l3 3v14H6v-17Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 11h6M9 14.5h6M9 7.5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m15 15 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 4 8.5 4.5L12 13 3.5 8.5 12 4Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m3.5 12.5 8.5 4.5 8.5-4.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-handshake" viewBox="0 0 24 24"><path d="M4 12.5 8.5 8l3 1.5 3-1.5L20 12.5l-5 5.2-2.2-1.2-1.8 1.7L4 12.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-leak" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M10.5 7.4c1.6 2 2.4 3.2 2.4 4.4a2.4 2.4 0 0 1-4.8 0c0-1.2.8-2.4 2.4-4.4Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M19 12H5m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M9 7H5.5v5H8c0 2-.8 3-2.5 3.5M18.5 7H15v5h2.5c0 2-.8 3-2.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s6.5-5.7 6.5-11A6.5 6.5 0 0 0 5.5 10C5.5 15.3 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="16.8" cy="7.2" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14 4v10.2a3.6 3.6 0 1 1-3.6-3.6M14 4c.4 2.2 1.9 3.6 4.2 3.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-snap" viewBox="0 0 24 24"><path d="M12 4.2c-2.6 0-4 1.9-4 4.2v2.2l-2.2.7 1.7 1.5c-.3 1-1 1.7-2 2.2 1 .4 2 .5 2.7 1 .3.7 1 1.2 1.8.9.6-.3 1.3-.4 2 0 .6.3 1.5 0 1.8-.9.8-.5 1.7-.6 2.7-1-1-.5-1.7-1.2-2-2.2l1.7-1.5-2.2-.7V8.4c0-2.3-1.4-4.2-4-4.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 12h17M12 3.5c2.4 2.5 3.4 5.3 3.4 8.5s-1 6-3.4 8.5c-2.4-2.5-3.4-5.3-3.4-8.5s1-6 3.4-8.5Z" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main" data-i18n="a11y.skip">{{a11y.skip}}</a>
+
+<!-- ============ الهيدر ============ -->
+<header class="hdr" id="top">
+  <div class="wrap hdr__in">
+    <a class="brand" href="#top" aria-label="{{brand.alt}}" data-i18n-attr="aria-label:brand.alt">
+      <img class="brand__emb" src="assets/logo/emblem.webp" alt="" width="455" height="479">
+      <img class="brand__word" src="assets/logo/wordmark.webp" alt="{{brand.alt}}" data-i18n-attr="alt:brand.alt" width="665" height="125">
+    </a>
+    <nav class="nav" id="nav" aria-label="{{nav.aria}}" data-i18n-attr="aria-label:nav.aria">
+      <a href="#services" data-i18n="nav.services">{{nav.services}}</a>
+      <a href="#why" data-i18n="nav.why">{{nav.why}}</a>
+      <a href="#works" data-i18n="nav.works" data-section="gallery">{{nav.works}}</a>
+      <a href="blog.html" data-i18n="nav.blog">{{nav.blog}}</a>
+      <a href="#faq" data-i18n="nav.faq">{{nav.faq}}</a>
+    </nav>
+    <div class="hdr__act">
+      <button class="lang" id="langBtn" type="button" aria-label="{{lang.aria}}" data-i18n-attr="aria-label:lang.aria"><svg class="ico" aria-hidden="true"><use href="#i-globe"/></svg><span data-i18n="lang.btn">{{lang.btn}}</span></button>
+      <a class="btn btn--line btn--sm hdr__call" href="#" data-call><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="hdr.call">{{hdr.call}}</span></a>
+      <a class="btn btn--wa btn--sm hdr__wa" href="#" data-wa target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="hdr.wa">{{hdr.wa}}</span></a>
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="{{hdr.menu}}" data-i18n-attr="aria-label:hdr.menu"><svg class="ico ico--open" aria-hidden="true"><use href="#i-menu"/></svg><svg class="ico ico--close" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ الهيرو ============ -->
+<section class="hero" data-anchor>
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow reveal"><span class="eyebrow__mark" aria-hidden="true"></span><span data-i18n="hero.eyebrow">{{hero.eyebrow}}</span></p>
+      <h1 class="reveal" data-i18n="hero.title">{{hero.title}}</h1>
+      <p class="lead reveal" data-i18n="hero.lead">{{hero.lead}}</p>
+      <div class="hero__cta reveal">
+        <a class="btn btn--navy btn--lg" href="#request" data-focus-form><span data-i18n="hero.cta1">{{hero.cta1}}</span><svg class="ico ico--dir" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--line btn--lg" href="#" data-call><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="hero.cta2">{{hero.cta2}}</span></a>
+      </div>
+      <ul class="hero__chips reveal" aria-hidden="false">
+        <li><a href="#svc-1"><svg class="ico" aria-hidden="true"><use href="#i-drop"/></svg><span data-i18n="svc.1.name">{{svc.1.name}}</span></a></li>
+        <li><a href="#svc-2"><svg class="ico" aria-hidden="true"><use href="#i-heat"/></svg><span data-i18n="svc.2.name">{{svc.2.name}}</span></a></li>
+        <li><a href="#svc-3"><svg class="ico" aria-hidden="true"><use href="#i-roof"/></svg><span data-i18n="svc.3.name">{{svc.3.name}}</span></a></li>
+        <li><a href="#svc-4"><svg class="ico" aria-hidden="true"><use href="#i-build"/></svg><span data-i18n="svc.4.name">{{svc.4.name}}</span></a></li>
+        <li><a href="#svc-5"><svg class="ico" aria-hidden="true"><use href="#i-leak"/></svg><span data-i18n="svc.5.name">{{svc.5.name}}</span></a></li>
+      </ul>
+    </div>
+
+    <div class="hero__visual">
+      <figure class="arch reveal" data-illus>
+        <img src="assets/hero/hero-main.webp" alt="{{hero.art}}" data-i18n-attr="alt:hero.art" width="960" height="1200" fetchpriority="high" decoding="async">
+        <figcaption class="tag" data-i18n="tag.illus">{{tag.illus}}</figcaption>
+      </figure>
+
+    </div>
+  </div>
+  <div class="wrap hero__formwrap">
+    <form class="form form--bar reveal" id="request" data-wa-form novalidate>
+      <h2 class="form__title" data-i18n="form.title">{{form.title}}</h2>
+      <p class="form__sub" data-i18n="form.sub">{{form.sub}}</p>
+      <div class="field"><label for="f1-name" data-i18n="form.name">{{form.name}}</label><input id="f1-name" name="name" type="text" autocomplete="name" required><span class="field__err" data-err="name" role="alert"></span></div>
+      <div class="field"><label for="f1-phone" data-i18n="form.phone">{{form.phone}}</label><input id="f1-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" placeholder="05xxxxxxxx" required><span class="field__err" data-err="phone" role="alert"></span></div>
+      <div class="field--row">
+        <div class="field"><label for="f1-city" data-i18n="form.city">{{form.city}}</label><input id="f1-city" name="city" type="text" autocomplete="address-level2" list="cityList" required><span class="field__err" data-err="city" role="alert"></span></div>
+        <div class="field"><label for="f1-service" data-i18n="form.service">{{form.service}}</label><select id="f1-service" name="service" required data-service-select></select><span class="field__err" data-err="service" role="alert"></span></div>
+      </div>
+      <button class="btn btn--wa btn--lg btn--block" type="submit"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="form.submit">{{form.submit}}</span></button>
+      <p class="form__hint" data-i18n="form.hint">{{form.hint}}</p>
+      <a class="form__fallback" href="#" target="_blank" rel="noopener" hidden data-i18n="form.fallback">{{form.fallback}}</a>
+    </form>
+  </div>
+</section>
+
+<!-- ============ شريط الثقة (حقائق مؤكدة فقط) ============ -->
+<section class="trust" aria-label="trust">
+  <div class="wrap trust__grid">
+    <div class="trust__item"><svg class="ico" aria-hidden="true"><use href="#i-layers"/></svg><div><strong data-i18n="trust.1.t">{{trust.1.t}}</strong><span data-i18n="trust.1.s">{{trust.1.s}}</span></div></div>
+    <div class="trust__item"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><div><strong data-i18n="trust.2.t">{{trust.2.t}}</strong><span data-i18n="trust.2.s">{{trust.2.s}}</span></div></div>
+    <div class="trust__item"><svg class="ico" aria-hidden="true"><use href="#i-form"/></svg><div><strong data-i18n="trust.3.t">{{trust.3.t}}</strong><span data-i18n="trust.3.s">{{trust.3.s}}</span></div></div>
+    <div class="trust__item" id="trust4"><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg><div><strong data-i18n="trust.4.t">{{trust.4.t}}</strong><span data-i18n="trust.4.s">{{trust.4.s}}</span></div></div>
+  </div>
+</section>
+
+<!-- ============ الخدمات ============ -->
+<section class="sec" id="services" data-anchor>
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="eyebrow"><span class="eyebrow__mark" aria-hidden="true"></span><span data-i18n="svc.eyebrow">{{svc.eyebrow}}</span></p>
+      <h2 data-i18n="svc.title">{{svc.title}}</h2>
+      <p class="lead" data-i18n="svc.lead">{{svc.lead}}</p>
+    </header>
+
+    <div class="svc__grid">
+      <article class="svc reveal" id="svc-1" data-service="1">
+        <figure class="svc__img" data-illus><img src="assets/services/waterproofing.webp" alt="{{svc.img.1}}" data-i18n-attr="alt:svc.img.1" width="900" height="700" loading="lazy" decoding="async"><figcaption class="tag" data-i18n="tag.illus">{{tag.illus}}</figcaption></figure>
+        <div class="svc__body">
+          <span class="svc__no" aria-hidden="true">01</span>
+          <span class="badge" aria-hidden="true"><svg class="ico"><use href="#i-drop"/></svg></span>
+          <h3 data-i18n="svc.1.name">{{svc.1.name}}</h3>
+          <p data-i18n="svc.1.desc">{{svc.1.desc}}</p>
+          <a class="btn btn--wa btn--sm" href="#" target="_blank" rel="noopener" data-wa-service="1"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="svc.cta">{{svc.cta}}</span></a>
+          <a class="svc__more" href="waterproofing.html"><span data-i18n="svc.details">{{svc.details}}</span><svg class="ico ico--dir" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="svc reveal" id="svc-2" data-service="2">
+        <figure class="svc__img" data-illus><img src="assets/services/thermal.webp" alt="{{svc.img.2}}" data-i18n-attr="alt:svc.img.2" width="900" height="700" loading="lazy" decoding="async"><figcaption class="tag" data-i18n="tag.illus">{{tag.illus}}</figcaption></figure>
+        <div class="svc__body">
+          <span class="svc__no" aria-hidden="true">02</span>
+          <span class="badge" aria-hidden="true"><svg class="ico"><use href="#i-heat"/></svg></span>
+          <h3 data-i18n="svc.2.name">{{svc.2.name}}</h3>
+          <p data-i18n="svc.2.desc">{{svc.2.desc}}</p>
+          <a class="btn btn--wa btn--sm" href="#" target="_blank" rel="noopener" data-wa-service="2"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="svc.cta">{{svc.cta}}</span></a>
+          <a class="svc__more" href="thermal-insulation.html"><span data-i18n="svc.details">{{svc.details}}</span><svg class="ico ico--dir" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="svc reveal" id="svc-3" data-service="3">
+        <figure class="svc__img" data-illus><img src="assets/services/roof.webp" alt="{{svc.img.3}}" data-i18n-attr="alt:svc.img.3" width="900" height="700" loading="lazy" decoding="async"><figcaption class="tag" data-i18n="tag.illus">{{tag.illus}}</figcaption></figure>
+        <div class="svc__body">
+          <span class="svc__no" aria-hidden="true">03</span>
+          <span class="badge" aria-hidden="true"><svg class="ico"><use href="#i-roof"/></svg></span>
+          <h3 data-i18n="svc.3.name">{{svc.3.name}}</h3>
+          <p data-i18n="svc.3.desc">{{svc.3.desc}}</p>
+          <a class="btn btn--wa btn--sm" href="#" target="_blank" rel="noopener" data-wa-service="3"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="svc.cta">{{svc.cta}}</span></a>
+          <a class="svc__more" href="roof-insulation.html"><span data-i18n="svc.details">{{svc.details}}</span><svg class="ico ico--dir" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="svc reveal" id="svc-4" data-service="4">
+        <figure class="svc__img" data-illus><img src="assets/services/building.webp" alt="{{svc.img.4}}" data-i18n-attr="alt:svc.img.4" width="900" height="700" loading="lazy" decoding="async"><figcaption class="tag" data-i18n="tag.illus">{{tag.illus}}</figcaption></figure>
+        <div class="svc__body">
+          <span class="svc__no" aria-hidden="true">04</span>
+          <span class="badge" aria-hidden="true"><svg class="ico"><use href="#i-build"/></svg></span>
+          <h3 data-i18n="svc.4.name">{{svc.4.name}}</h3>
+          <p data-i18n="svc.4.desc">{{svc.4.desc}}</p>
+          <a class="btn btn--wa btn--sm" href="#" target="_blank" rel="noopener" data-wa-service="4"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="svc.cta">{{svc.cta}}</span></a>
+          <a class="svc__more" href="building-insulation.html"><span data-i18n="svc.details">{{svc.details}}</span><svg class="ico ico--dir" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="svc svc--wide reveal" id="svc-5" data-service="5">
+        <figure class="svc__img" data-illus><img src="assets/services/leak-detection.webp" alt="{{svc.img.5}}" data-i18n-attr="alt:svc.img.5" width="768" height="597" loading="lazy" decoding="async"><figcaption class="tag" data-i18n="tag.illus">{{tag.illus}}</figcaption></figure>
+        <div class="svc__body">
+          <span class="svc__no" aria-hidden="true">05</span>
+          <span class="badge" aria-hidden="true"><svg class="ico"><use href="#i-leak"/></svg></span>
+          <h3 data-i18n="svc.5.name">{{svc.5.name}}</h3>
+          <p data-i18n="svc.5.desc">{{svc.5.desc}}</p>
+          <a class="btn btn--wa btn--sm" href="#" target="_blank" rel="noopener" data-wa-service="5"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="svc.cta">{{svc.cta}}</span></a>
+          <a class="svc__more" href="leak-detection.html"><span data-i18n="svc.details">{{svc.details}}</span><svg class="ico ico--dir" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ لماذا نحن ============ -->
+<section class="sec sec--ink" id="why" data-anchor>
+  <div class="wrap why">
+    <header class="sec__head reveal">
+      <p class="eyebrow"><span class="eyebrow__mark" aria-hidden="true"></span><span data-i18n="why.eyebrow">{{why.eyebrow}}</span></p>
+      <h2 data-i18n="why.title">{{why.title}}</h2>
+      <p class="lead" data-i18n="why.lead">{{why.lead}}</p>
+    </header>
+    <ul class="why__list">
+      <li class="why__item reveal"><span class="badge badge--ink" aria-hidden="true"><svg class="ico"><use href="#i-search"/></svg></span><h3 data-i18n="why.1.t">{{why.1.t}}</h3><p data-i18n="why.1.d">{{why.1.d}}</p></li>
+      <li class="why__item reveal"><span class="badge badge--ink" aria-hidden="true"><svg class="ico"><use href="#i-layers"/></svg></span><h3 data-i18n="why.2.t">{{why.2.t}}</h3><p data-i18n="why.2.d">{{why.2.d}}</p></li>
+      <li class="why__item reveal"><span class="badge badge--ink" aria-hidden="true"><svg class="ico"><use href="#i-chat"/></svg></span><h3 data-i18n="why.3.t">{{why.3.t}}</h3><p data-i18n="why.3.d">{{why.3.d}}</p></li>
+      <li class="why__item reveal"><span class="badge badge--ink" aria-hidden="true"><svg class="ico"><use href="#i-handshake"/></svg></span><h3 data-i18n="why.4.t">{{why.4.t}}</h3><p data-i18n="why.4.d">{{why.4.d}}</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ خطوات العمل ============ -->
+<section class="sec" id="process" data-anchor>
+  <div class="wrap">
+    <header class="sec__head sec__head--center reveal">
+      <p class="eyebrow"><span class="eyebrow__mark" aria-hidden="true"></span><span data-i18n="proc.eyebrow">{{proc.eyebrow}}</span></p>
+      <h2 data-i18n="proc.title">{{proc.title}}</h2>
+    </header>
+    <ol class="steps">
+      <li class="step reveal"><span class="step__no" aria-hidden="true">1</span><h3 data-i18n="proc.1.t">{{proc.1.t}}</h3><p data-i18n="proc.1.d">{{proc.1.d}}</p></li>
+      <li class="step reveal"><span class="step__no" aria-hidden="true">2</span><h3 data-i18n="proc.2.t">{{proc.2.t}}</h3><p data-i18n="proc.2.d">{{proc.2.d}}</p></li>
+      <li class="step reveal"><span class="step__no" aria-hidden="true">3</span><h3 data-i18n="proc.3.t">{{proc.3.t}}</h3><p data-i18n="proc.3.d">{{proc.3.d}}</p></li>
+      <li class="step reveal"><span class="step__no" aria-hidden="true">4</span><h3 data-i18n="proc.4.t">{{proc.4.t}}</h3><p data-i18n="proc.4.d">{{proc.4.d}}</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ قبل وبعد ============ -->
+<section class="sec sec--ink" id="compare" data-anchor data-section="compare">
+  <div class="wrap compare">
+    <header class="sec__head reveal">
+      <p class="eyebrow"><span class="eyebrow__mark" aria-hidden="true"></span><span data-i18n="compare.eyebrow">{{compare.eyebrow}}</span></p>
+      <h2 data-i18n="compare.title">{{compare.title}}</h2>
+      <p class="lead" data-i18n="compare.lead">{{compare.lead}}</p>
+    </header>
+    <div class="cmp-wrap reveal" data-illus>
+      <div class="cmp" id="cmp" style="--pos:50%">
+        <img class="cmp__img" src="assets/projects/compare-after.webp" alt="{{compare.altAfter}}" data-i18n-attr="alt:compare.altAfter" width="768" height="960" loading="lazy" decoding="async">
+        <img class="cmp__img cmp__top" src="assets/projects/compare-before.webp" alt="{{compare.altBefore}}" data-i18n-attr="alt:compare.altBefore" width="768" height="960" loading="lazy" decoding="async">
+        <span class="cmp__lab cmp__lab--b" data-i18n="compare.before">{{compare.before}}</span>
+        <span class="cmp__lab cmp__lab--a" data-i18n="compare.after">{{compare.after}}</span>
+        <span class="cmp__line" aria-hidden="true"><span class="cmp__knob"><svg class="ico" viewBox="0 0 24 24"><path d="m9 6-5 6 5 6M15 6l5 6-5 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+        <input class="cmp__range" type="range" min="0" max="100" value="50" aria-label="{{compare.aria}}" data-i18n-attr="aria-label:compare.aria">
+      </div>
+      <span class="tag cmp__tag" data-i18n="tag.illus">{{tag.illus}}</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ معرض الأعمال ============ -->
+<section class="sec sec--sand2" id="works" data-anchor data-section="gallery">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="eyebrow"><span class="eyebrow__mark" aria-hidden="true"></span><span data-i18n="works.eyebrow">{{works.eyebrow}}</span></p>
+      <h2 data-i18n="works.title">{{works.title}}</h2>
+      <p class="lead" data-i18n="works.lead" data-illus-only>{{works.lead}}</p>
+    </header>
+
+    <div class="filters" role="group" aria-label="filters">
+      <button type="button" class="chip is-on" data-filter="all" aria-pressed="true" data-i18n="works.f.all">{{works.f.all}}</button>
+      <button type="button" class="chip" data-filter="water" aria-pressed="false" data-i18n="works.f.water">{{works.f.water}}</button>
+      <button type="button" class="chip" data-filter="thermal" aria-pressed="false" data-i18n="works.f.thermal">{{works.f.thermal}}</button>
+      <button type="button" class="chip" data-filter="roof" aria-pressed="false" data-i18n="works.f.roof">{{works.f.roof}}</button>
+      <button type="button" class="chip" data-filter="building" aria-pressed="false" data-i18n="works.f.building">{{works.f.building}}</button>
+    </div>
+
+    <ul class="gallery" id="gallery">
+      <li class="g-item" data-cat="water"><button type="button" class="g-btn" data-cap="works.1" aria-label="{{works.open}}" data-i18n-attr="aria-label:works.open"><img src="assets/projects/water-roof.webp" alt="{{works.1}}" data-i18n-attr="alt:works.1" width="1200" height="900" loading="lazy" decoding="async"><span class="g-cap" data-i18n="works.1">{{works.1}}</span><span class="tag" data-i18n="tag.illus" data-illus-tag>{{tag.illus}}</span></button></li>
+      <li class="g-item" data-cat="water"><button type="button" class="g-btn" data-cap="works.2" aria-label="{{works.open}}" data-i18n-attr="aria-label:works.open"><img src="assets/projects/water-bathroom.webp" alt="{{works.2}}" data-i18n-attr="alt:works.2" width="1200" height="900" loading="lazy" decoding="async"><span class="g-cap" data-i18n="works.2">{{works.2}}</span><span class="tag" data-i18n="tag.illus" data-illus-tag>{{tag.illus}}</span></button></li>
+      <li class="g-item" data-cat="thermal"><button type="button" class="g-btn" data-cap="works.3" aria-label="{{works.open}}" data-i18n-attr="aria-label:works.open"><img src="assets/projects/thermal-ceiling.webp" alt="{{works.3}}" data-i18n-attr="alt:works.3" width="1200" height="900" loading="lazy" decoding="async"><span class="g-cap" data-i18n="works.3">{{works.3}}</span><span class="tag" data-i18n="tag.illus" data-illus-tag>{{tag.illus}}</span></button></li>
+      <li class="g-item" data-cat="roof"><button type="button" class="g-btn" data-cap="works.4" aria-label="{{works.open}}" data-i18n-attr="aria-label:works.open"><img src="assets/projects/roof-house.webp" alt="{{works.4}}" data-i18n-attr="alt:works.4" width="1200" height="900" loading="lazy" decoding="async"><span class="g-cap" data-i18n="works.4">{{works.4}}</span><span class="tag" data-i18n="tag.illus" data-illus-tag>{{tag.illus}}</span></button></li>
+      <li class="g-item" data-cat="building"><button type="button" class="g-btn" data-cap="works.5" aria-label="{{works.open}}" data-i18n-attr="aria-label:works.open"><img src="assets/projects/building-facade.webp" alt="{{works.5}}" data-i18n-attr="alt:works.5" width="1200" height="900" loading="lazy" decoding="async"><span class="g-cap" data-i18n="works.5">{{works.5}}</span><span class="tag" data-i18n="tag.illus" data-illus-tag>{{tag.illus}}</span></button></li>
+      <li class="g-item" data-cat="building water"><button type="button" class="g-btn" data-cap="works.6" aria-label="{{works.open}}" data-i18n-attr="aria-label:works.open"><img src="assets/projects/building-foundation.webp" alt="{{works.6}}" data-i18n-attr="alt:works.6" width="1200" height="900" loading="lazy" decoding="async"><span class="g-cap" data-i18n="works.6">{{works.6}}</span><span class="tag" data-i18n="tag.illus" data-illus-tag>{{tag.illus}}</span></button></li>
+    </ul>
+  </div>
+</section>
+
+<dialog class="lb" id="lightbox" aria-label="gallery">
+  <div class="lb__inner">
+    <button type="button" class="lb__btn lb__close" data-lb="close" aria-label="{{lb.close}}" data-i18n-attr="aria-label:lb.close"><svg class="ico" aria-hidden="true"><use href="#i-close"/></svg></button>
+    <button type="button" class="lb__btn lb__prev" data-lb="prev" aria-label="{{lb.prev}}" data-i18n-attr="aria-label:lb.prev"><svg class="ico" aria-hidden="true"><use href="#i-chev"/></svg></button>
+    <figure class="lb__fig"><img id="lbImg" alt=""><span class="tag" id="lbTag" data-i18n="tag.illus">{{tag.illus}}</span><figcaption id="lbCap"></figcaption></figure>
+    <button type="button" class="lb__btn lb__next" data-lb="next" aria-label="{{lb.next}}" data-i18n-attr="aria-label:lb.next"><svg class="ico" aria-hidden="true"><use href="#i-chev"/></svg></button>
+  </div>
+</dialog>
+
+<!-- ============ آراء العملاء (أماكن فاضية) ============ -->
+<section class="sec" id="testimonials" data-anchor data-section="testimonials">
+  <div class="wrap">
+    <header class="sec__head sec__head--center reveal">
+      <p class="eyebrow"><span class="eyebrow__mark" aria-hidden="true"></span><span data-i18n="testi.eyebrow">{{testi.eyebrow}}</span></p>
+      <h2 data-i18n="testi.title">{{testi.title}}</h2>
+    </header>
+    <div class="testi">
+      <div class="testi__slot reveal"><svg class="ico" aria-hidden="true"><use href="#i-quote"/></svg><strong data-i18n="testi.slot">{{testi.slot}}</strong><p data-i18n="testi.empty">{{testi.empty}}</p></div>
+      <div class="testi__slot reveal"><svg class="ico" aria-hidden="true"><use href="#i-quote"/></svg><strong data-i18n="testi.slot">{{testi.slot}}</strong><p data-i18n="testi.empty">{{testi.empty}}</p></div>
+      <div class="testi__slot reveal"><svg class="ico" aria-hidden="true"><use href="#i-quote"/></svg><strong data-i18n="testi.slot">{{testi.slot}}</strong><p data-i18n="testi.empty">{{testi.empty}}</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ المقالات ============ -->
+<section class="sec" id="blog" data-anchor>
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="eyebrow"><span class="eyebrow__mark" aria-hidden="true"></span><span data-i18n="blog.eyebrow">{{blog.eyebrow}}</span></p>
+      <h2 data-i18n="blog.title">{{blog.title}}</h2>
+      <p class="lead" data-i18n="blog.lead">{{blog.lead}}</p>
+    </header>
+    <div data-render="home-articles">{{@home-articles}}</div>
+    <p class="blog__all"><a class="btn btn--line" href="blog.html"><span data-i18n="blog.all">{{blog.all}}</span><svg class="ico ico--dir" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+  </div>
+</section>
+
+<!-- ============ الأسئلة الشائعة ============ -->
+<section class="sec sec--sand2" id="faq" data-anchor>
+  <div class="wrap faq">
+    <header class="sec__head reveal">
+      <p class="eyebrow"><span class="eyebrow__mark" aria-hidden="true"></span><span data-i18n="faq.eyebrow">{{faq.eyebrow}}</span></p>
+      <h2 data-i18n="faq.title">{{faq.title}}</h2>
+    </header>
+    <div class="acc reveal" id="acc">
+      <div class="acc__item"><h3><button type="button" class="acc__q" id="q1" aria-expanded="false" aria-controls="a1"><span data-i18n="faq.1.q">{{faq.1.q}}</span><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc__a" id="a1" role="region" aria-labelledby="q1"><div><p data-i18n="faq.1.a">{{faq.1.a}}</p></div></div></div>
+      <div class="acc__item"><h3><button type="button" class="acc__q" id="q2" aria-expanded="false" aria-controls="a2"><span data-i18n="faq.2.q">{{faq.2.q}}</span><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc__a" id="a2" role="region" aria-labelledby="q2"><div><p data-i18n="faq.2.a">{{faq.2.a}}</p></div></div></div>
+      <div class="acc__item"><h3><button type="button" class="acc__q" id="q3" aria-expanded="false" aria-controls="a3"><span data-i18n="faq.3.q">{{faq.3.q}}</span><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc__a" id="a3" role="region" aria-labelledby="q3"><div><p data-i18n="faq.3.a">{{faq.3.a}}</p></div></div></div>
+      <div class="acc__item"><h3><button type="button" class="acc__q" id="q4" aria-expanded="false" aria-controls="a4"><span data-i18n="faq.4.q">{{faq.4.q}}</span><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc__a" id="a4" role="region" aria-labelledby="q4"><div><p data-i18n="faq.4.a">{{faq.4.a}}</p></div></div></div>
+      <div class="acc__item"><h3><button type="button" class="acc__q" id="q5" aria-expanded="false" aria-controls="a5"><span data-i18n="faq.5.q">{{faq.5.q}}</span><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc__a" id="a5" role="region" aria-labelledby="q5"><div><p data-i18n="faq.5.a">{{faq.5.a}}</p></div></div></div>
+      <div class="acc__item"><h3><button type="button" class="acc__q" id="q7" aria-expanded="false" aria-controls="a7"><span data-i18n="faq.7.q">{{faq.7.q}}</span><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc__a" id="a7" role="region" aria-labelledby="q7"><div><p data-i18n="faq.7.a">{{faq.7.a}}</p></div></div></div>
+      <div class="acc__item" data-illus-only><h3><button type="button" class="acc__q" id="q6" aria-expanded="false" aria-controls="a6"><span data-i18n="faq.6.q">{{faq.6.q}}</span><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc__a" id="a6" role="region" aria-labelledby="q6"><div><p data-i18n="faq.6.a">{{faq.6.a}}</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA النهائي ============ -->
+<section class="cta" id="contact" data-anchor>
+  <div class="wrap cta__grid">
+    <div class="cta__copy reveal">
+      <p class="eyebrow eyebrow--light"><span class="eyebrow__mark" aria-hidden="true"></span><span data-i18n="cta.eyebrow">{{cta.eyebrow}}</span></p>
+      <h2 data-i18n="cta.title">{{cta.title}}</h2>
+      <p class="lead" data-i18n="cta.lead">{{cta.lead}}</p>
+      <div class="cta__btns">
+        <a class="btn btn--brass btn--lg" href="#" data-call><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cta.call">{{cta.call}}</span></a>
+        <a class="btn btn--wa btn--lg" href="#" data-wa target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="cta.wa">{{cta.wa}}</span></a>
+      </div>
+    </div>
+    <form class="form reveal" id="request2" data-wa-form novalidate>
+      <h2 class="form__title" data-i18n="form.title">{{form.title}}</h2>
+      <p class="form__sub" data-i18n="form.sub">{{form.sub}}</p>
+      <div class="field"><label for="f2-name" data-i18n="form.name">{{form.name}}</label><input id="f2-name" name="name" type="text" autocomplete="name" required><span class="field__err" data-err="name" role="alert"></span></div>
+      <div class="field"><label for="f2-phone" data-i18n="form.phone">{{form.phone}}</label><input id="f2-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" placeholder="05xxxxxxxx" required><span class="field__err" data-err="phone" role="alert"></span></div>
+      <div class="field--row">
+        <div class="field"><label for="f2-city" data-i18n="form.city">{{form.city}}</label><input id="f2-city" name="city" type="text" autocomplete="address-level2" list="cityList" required><span class="field__err" data-err="city" role="alert"></span></div>
+        <div class="field"><label for="f2-service" data-i18n="form.service">{{form.service}}</label><select id="f2-service" name="service" required data-service-select></select><span class="field__err" data-err="service" role="alert"></span></div>
+      </div>
+      <div class="field"><label for="f2-notes" data-i18n="form.notes">{{form.notes}}</label><textarea id="f2-notes" name="notes" rows="3"></textarea></div>
+      <button class="btn btn--wa btn--lg btn--block" type="submit"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="form.submit">{{form.submit}}</span></button>
+      <p class="form__hint" data-i18n="form.hint">{{form.hint}}</p>
+      <a class="form__fallback" href="#" target="_blank" rel="noopener" hidden data-i18n="form.fallback">{{form.fallback}}</a>
+    </form>
+  </div>
+</section>
+<datalist id="cityList"></datalist>
+
+</main>
+
+<!-- ============ الفوتر ============ -->
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div class="foot__brand">
+      <div class="plaque"><img src="assets/logo/logo-full.webp" alt="{{brand.alt}}" data-i18n-attr="alt:brand.alt" width="685" height="700" loading="lazy" decoding="async"></div>
+      <p data-i18n="foot.about">{{foot.about}}</p>
+    </div>
+    <div>
+      <h3 data-i18n="foot.services">{{foot.services}}</h3>
+      <ul class="foot__list">
+        <li><a href="#svc-1" data-i18n="svc.1.name">{{svc.1.name}}</a></li>
+        <li><a href="#svc-2" data-i18n="svc.2.name">{{svc.2.name}}</a></li>
+        <li><a href="#svc-3" data-i18n="svc.3.name">{{svc.3.name}}</a></li>
+        <li><a href="#svc-4" data-i18n="svc.4.name">{{svc.4.name}}</a></li>
+        <li><a href="#svc-5" data-i18n="svc.5.name">{{svc.5.name}}</a></li>
+        <li><a href="blog.html" data-i18n="nav.blog">{{nav.blog}}</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 data-i18n="foot.contact">{{foot.contact}}</h3>
+      <ul class="foot__list" id="footContact">
+        <li><a href="#" data-call><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span dir="ltr" data-phone-text></span></a></li>
+        <li><a href="#" data-wa target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="hdr.wa">{{hdr.wa}}</span></a></li>
+        <li data-if="email"><a href="#" data-email><span data-email-text dir="ltr"></span></a></li>
+        <li data-if="address"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span data-address-text></span></li>
+        <li data-if="hours"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg><span data-hours-text></span></li>
+      </ul>
+      <div class="social" id="social"></div>
+    </div>
+  </div>
+  <div class="wrap foot__bottom">
+    <p>© <span id="year"></span> <span data-company-name></span> — <span data-i18n="foot.rights">{{foot.rights}}</span></p>
+    <p class="foot__note" data-i18n="foot.note" data-illus-only>{{foot.note}}</p>
+  </div>
+</footer>
+
+<!-- أزرار عايمة (ديسكتوب) -->
+<div class="float" aria-label="contact">
+  <a class="float__btn float__btn--wa" href="#" data-wa target="_blank" rel="noopener" aria-label="{{float.wa}}" data-i18n-attr="aria-label:float.wa"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg></a>
+  <a class="float__btn float__btn--call" href="#" data-call aria-label="{{float.call}}" data-i18n-attr="aria-label:float.call"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg></a>
+</div>
+
+<!-- شريط سفلي ثابت (موبايل) -->
+<div class="mbar">
+  <a class="mbar__btn mbar__btn--call" href="#" data-call><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="mobile.call">{{mobile.call}}</span></a>
+  <a class="mbar__btn mbar__btn--wa" href="#" data-wa target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="mobile.wa">{{mobile.wa}}</span></a>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/pages.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
